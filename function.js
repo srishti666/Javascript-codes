@@ -12,4 +12,6 @@ function favouriteProcessor(apples, oranges){
     return juice;
 }
 favouriteProcessor(5,8);
+const appleJuice = favouriteProcessor(5,0);
+console.log(appleJuice);
 
