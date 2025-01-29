@@ -6,12 +6,15 @@ logger();
 logger();
 logger();
 
-function favouriteProcessor(apples, oranges){
+function fruitProcessor(apples, oranges){
     console.log(apples, oranges)
     const juice = `Juice with ${apples} apples and ${oranges} oranges`;
     return juice;
 }
-favouriteProcessor(5,8);
-const appleJuice = favouriteProcessor(5,0);
+//the result of calling the fruitprocessor funct will be the juice value that just returned
+const appleJuice = fruitProcessor(5,0);
 console.log(appleJuice);
 
+
+const appleOrangeJuice = fruitProcessor(2,4);
+console.log(appleOrangeJuice);
