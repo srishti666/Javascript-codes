@@ -7,19 +7,20 @@ const calcAge3 = birthyear => 2037 - birthyear;
 const age3 = calcAge3(1991);
 console.log(age3);
 
-// const yearsUntilRetirement = birthyear => {
-//     const age = 2037 - birthyear;
-//     const retirement = 65 - age;
+
+// const yearstoretire = birthyear => {
+//     const age = 2025 - birthyear;
+//     const retirement = 40 - age;
 //     return retirement;
 // }
+// console.log(yearstoretire(2003));
 
-const yearstoretire = birthyear => {
+
+const yearstoretire = (birthyear, firstName)=> {
     const age = 2025 - birthyear;
     const retirement = 40 - age;
-    return retirement;
+    return `${firstName} retires in ${retirement} years`
 }
-console.log(yearstoretire(2003));
-
-
+console.log(yearstoretire(2003,'Srishti'));
 
 
