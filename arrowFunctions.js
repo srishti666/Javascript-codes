@@ -23,4 +23,18 @@ const yearstoretire = (birthyear, firstName)=> {
 }
 console.log(yearstoretire(2003,'Srishti'));
 
+//function calling other functions
+
+const cutFruitpieces = function(fruit){
+    return fruit * 4;
+}
+
+const fruitProcessor = function (apples, oranges){
+    const cutApples = cutFruitpieces(apples);
+    const cutOranges = cutFruitpieces(oranges);
+    return `the cut fruit contains ${cutApples} apple pieces and ${cutOranges} orange pieces`;
+    // const juice = `the cut fruit contains ${cutApples} apple pieces and ${cutOranges} orange pieces`;
+    // return juice;
+}
+console.log(fruitProcessor(2,3));
 
