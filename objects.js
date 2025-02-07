@@ -12,8 +12,17 @@ const jonas = {
     lastName: 'Manna',
     age: 2025 - 2003,
     job: 'SDE',
-    friends: ['Astha', 'lily', 'aden']
+    friends: ['Astha', 'lily', 'aden'],
+    hasDriversLicense: true,
+
+    calcAge : function(birthyear){
+        return 2037 - birthyear;
+    }
 };
+
+const calcAge = function(birthyear){
+    return 2037 - birthyear;
+}
 
 console.log(jonas);
 console.log(jonas['lastName']);
@@ -35,3 +44,7 @@ else {
 //Dot notation : Preferred when the property name is a valid identifier (alphanumeric, underscores, and dollar signs, but cannot start with a number).
 
 //Bracket Notation: Necessary when the property name is not a valid identifier, is a variable, or contains special characters.
+
+console.log(`${jonas.firstName} has ${jonas.friends.friends} friends, and his best friend is called ${jonas.friends[0]}`);
+
+
