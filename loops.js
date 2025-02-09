@@ -4,6 +4,10 @@ for(let rep = 1; rep <=10; rep++){
     console.log(`Lifting weights repitition ${rep}`);
 }
 
+for(let rep = 1; rep <=10; rep++){
+    console.log(`Lifting weights repitition ${rep}`);
+}
+
 const jonas= [
     'Jonas',
     'Schmedtann',
