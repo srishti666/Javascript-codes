@@ -4,17 +4,15 @@ for(let rep = 1; rep <=10; rep++){
     console.log(`Lifting weights repitition ${rep}`);
 }
 
-for(let rep = 1; rep <=10; rep++){
-    console.log(`Lifting weights repitition ${rep}`);
-}
-
 const jonas= [
     'Jonas',
     'Schmedtann',
     2037 - 1991,
     'teacher',
     ['Mike', 'Bob', 'Lucy'],
-    true
+    ['Kacey', 'Billy', 'Lucy'],
+    true,
+    1000
 ];
 
 const types = [];
