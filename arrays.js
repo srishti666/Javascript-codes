@@ -44,18 +44,34 @@
 //SLICE
 let arr = ['a', 'b', 'c','d','e'];
 
-console.log(arr.slice(2));  //2 to end ; c, d, e
-console.log(arr.slice(2, 4));  //from 2 to 4-1 i.e. c,d
-console.log(arr.slice(-1)); //last element
-console.log(arr.slice(-2)); //last two element
-console.log(arr.slice(1,-1)); // 1 to -1(e) + 1 ; b ,c, d
+// console.log(arr.slice(2));  //2 to end ; c, d, e
+// console.log(arr.slice(2, 4));  //from 2 to 4-1 i.e. c,d
+// console.log(arr.slice(-1)); //last element
+// console.log(arr.slice(-2)); //last two element
+// console.log(arr.slice(1,-1)); // 1 to -1(e) + 1 ; b ,c, d
 
-//to create a shallow copy
-console.log([...arr]); 
-console.log((arr.slice())); 
+// //to create a shallow copy
+// console.log([...arr]); 
+// console.log((arr.slice())); 
 
-//SPLICE -> mutates the array
-console.log(arr.splice(2));
+// //SPLICE -> mutates the array
+// console.log(arr.splice(2));
 
+//REVERSE
+arr = ['a', 'b', 'c','d','e'];
+const arr2 = ['j' ,'i', 'h','g','f'];
+console.log(arr2.reverse());
+//reverse method mutates the original array
+console.log(arr2);
+
+//CONCAT
+//concat doesnt mutate the original array
+const letters = arr.concat(arr2);
+console.log(letters);
+console.log(...arr, ...arr2);
+
+
+//  JOIN
+console.log(letters.join(' - '));
 
 
