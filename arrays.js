@@ -72,13 +72,32 @@ console.log(...arr, ...arr2);
 
 
 //  JOIN
-console.log(letters.join(' - '));
+// console.log(letters.join(' - '));
 
 //New At Method
-const arr1 = [23, 11, 54];
-console.log(arr1[0]);
-console.log(arr1.at(0));
-console.log(arr1.at(-1)); //to get the last element of an array 
-console.log('jonas'.at(-1));
+// const arr1 = [23, 11, 54];
+// console.log(arr1[0]);
+// console.log(arr1.at(0));
+// console.log(arr1.at(-1)); //to get the last element of an array 
+// console.log('jonas'.at(-1));
 
+
+const movements = [200, 450, -400, 3000, -650, 130, 70, 1300]
+
+for(const [i, movement] of movements.entries()) {
+    if(movement > 0){
+        console.log(`Movement ${i + 1}: You deposited ${movement}`);
+    } else {
+        console.log(`Movement ${i + 1}: You withdrew ${Math.abs(movement)}`);
+    }
+}
+
+console.log('-----FOR EACH-----')
+movements.forEach(function (movement){
+    if(movement > 0){
+        console.log(`You deposited ${movement}`);
+    } else {
+        console.log(`You withdrew ${Math.abs(movement)}`);
+    }
+});
 
