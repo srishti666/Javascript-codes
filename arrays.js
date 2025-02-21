@@ -74,4 +74,11 @@ console.log(...arr, ...arr2);
 //  JOIN
 console.log(letters.join(' - '));
 
+//New At Method
+const arr1 = [23, 11, 54];
+console.log(arr1[0]);
+console.log(arr1.at(0));
+console.log(arr1.at(-1)); //to get the last element of an array 
+console.log('jonas'.at(-1));
+
 
