@@ -101,3 +101,20 @@ movements.forEach(function (movement){
     }
 });
 
+
+function add(a, b) {
+    return a + b;
+  }
+  
+  function getAdder() {
+    return add;
+  }
+
+  let adder = getAdder();
+  let result = adder(4, 2); // result will be 6
+  let result2 = add(1, 2); // result will be 6
+  
+  console.log(result); // This will print 6 to the console
+  console.log(result2); // This will print 6 to the console
+  
+
