@@ -102,6 +102,7 @@ movements.forEach(function (movement){
 });
 
 
+
 function add(a, b) {
     return a + b;
   }
@@ -118,3 +119,31 @@ function add(a, b) {
   console.log(result2); // This will print 6 to the console
   
 
+// const person = {
+//     name: 'mosh',
+//     walk(){},
+//     talk(){}
+// };
+
+// person.talk();
+// person.name = '';
+// person['name'] = 'john';
+
+// const targetMember = 'name';
+// person[targetMember.value] = 'Srishti';
+
+//this keyword
+const person = {
+    name: "Mosh",
+    walk(){
+        console.log(this);
+    }
+};
+
+person.walk();
+//if you call a function as a method in an object it returns the reference to that object
+
+const walk = person.walk; //getting a reference to this func, walk is now a function
+// console.log(walk);
+walk();
+//if you call a func as a standalone obj or outside of an obj , "this" will return the Window object
