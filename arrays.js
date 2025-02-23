@@ -147,3 +147,8 @@ const walk = person.walk; //getting a reference to this func, walk is now a func
 // console.log(walk);
 walk();
 //if you call a func as a standalone obj or outside of an obj , "this" will return the Window object
+//if strict mode is enabled it returns undefined
+
+
+
+

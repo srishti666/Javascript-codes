@@ -38,3 +38,16 @@ const fruitProcessor = function (apples, oranges){
 }
 console.log(fruitProcessor(2,3));
 
+
+//video -2 YT
+
+const square = function(number){
+    return number * number;
+}
+
+const circle = (number) => {
+    return number * number;
+}
+
+
+
