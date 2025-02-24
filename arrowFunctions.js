@@ -49,5 +49,40 @@ const circle = (number) => {
     return number * number;
 }
 
+const jobs = [
+    { id: 1, isActive: true },
+    { id: 2, isActive: true },
+    { id: 3, isActive: false },
+];
+
+//filter method iterates over the array jobs and passes through the below func
+const activeJobs = jobs.filter(function(job) { 
+    return job.isActive;
+})
+const isactiveJobs = jobs.filter(job => job.isActive);
+
+
+//arrow func & this
+const person = {
+    talk() {
+        var self = this;
+        setTimeout(function() {
+            console.log("self", self);
+        }, 1000);
+    }
+};
+
+person.talk();
+
+// const person = {
+//     talk() {
+//         setTimeout(function() {
+//             console.log("this", this);
+//         }, 1000);
+//     }
+// };
+
+// person.talk();
+
 
 
