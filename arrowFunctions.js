@@ -84,5 +84,8 @@ person.talk();
 
 // person.talk();
 
+//ARRAY MAP
+const colors = ['red', 'green', 'blue'];
+const items = colors.map(color =>'<li>' + color + '</li>');
 
 
