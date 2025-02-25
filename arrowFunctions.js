@@ -84,10 +84,27 @@ person.talk();
 
 // person.talk();
 
-//ARRAY MAP
+//ARRAY MAP: render a list of items
 const colors = ['red', 'green', 'blue'];
 // const items = colors.map(color =>'<li>' + color + '</li>');
 const items = colors.map(color => `<li> ${color} </li>`); //template literal
 console.log(items);
+
+//Object destructuring
+
+const address = {
+    street: '',
+    city: '',
+    country: ''
+};
+
+const street = address.street;
+const city = address.city;
+const country = address.country;
+
+//destructuring
+const { street, city, country} = address;
+const { street: st} = address; //to use alias for a property
+
 
 
