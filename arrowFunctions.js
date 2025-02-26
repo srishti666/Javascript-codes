@@ -90,7 +90,7 @@ const colors = ['red', 'green', 'blue'];
 const items = colors.map(color => `<li> ${color} </li>`); //template literal
 console.log(items);
 
-//Object destructuring
+//Object destructuring:  to unpack values from arrays, or properties from objects, into distinct variables.
 
 const address = {
     street: '',
@@ -98,13 +98,22 @@ const address = {
     country: ''
 };
 
-const street = address.street;
-const city = address.city;
-const country = address.country;
+// const street = address.street;
+// const city = address.city;
+// const country = address.country;
 
 //destructuring
 const { street, city, country} = address;
 const { street: st} = address; //to use alias for a property
 
+//Spread Operator: [...xyz]
+const first = [1, 2, 3];
+const second = [1, 2, 3];
 
+// const combined = first.concat(second);
+const combined = [...first,'a', ...second, 'b'];
+// const combined2 = {...first, ...second location}
+console.log(combined)
+
+const clone = [...first];
 
