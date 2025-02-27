@@ -115,5 +115,13 @@ const combined = [...first,'a', ...second, 'b'];
 // const combined2 = {...first, ...second location}
 console.log(combined)
 
+//cloning
 const clone = [...first];
+
+const first1 = { name : 'Srishti' };
+const second1 = { job : 'Analyst' };
+
+
+const combined1 = {...first1, ...second1, location: 'india'};
+console.log(combined1);
 
