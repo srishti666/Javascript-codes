@@ -1,9 +1,9 @@
-import { Teacher } from './teacher';
+import Teacher, { promote} from './teacher';
 
 
 
-//Inheritance
-
+//Default -> import ... from '';
+// Named -> import {...} from '';
 
 const teacher = new Teacher("Srishti", "BTech");
 teacher.teach();
