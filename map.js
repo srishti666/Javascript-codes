@@ -1,12 +1,12 @@
-// // const arr = [ 5, 1, 3, 2, 6];
+// const arr = [ 5, 1, 3, 2, 6];
 
-// // function double(x) {
-// //     return x * 2;
-// // }
-// // function triple(x) {
-// //     return x * 3;
-// // }
-// // const output2 = arr.map(triple);
+// function double(x) {
+//     return x * 2;
+// }
+// function triple(x) {
+//     return x * 3;
+// }
+// const output2 = arr.map(triple);
 
 
 // function binary(x){
@@ -60,4 +60,28 @@ function findSum (arr) {
     return sum;
 }
 
-console.log(findSum(arr))
+console.log(findSum(arr));
+//uisng redude function, acc=accumulator, curr=current
+const output2 = arr.reduce(function(acc, curr){
+    acc = acc + curr;
+    return acc;
+}, 0)
+
+console.log(output2);
+
+//find max
+console.log(findSum(arr));
+
+// // const arr = [ 5, 1, 3, 2, 6];
+
+const output3 = arr.reduce(function(max, curr){
+    if(curr > max){
+        max = curr;
+    }
+     return max;
+}, 0)
+
+console.log(output3);
+
+
+
