@@ -11,13 +11,18 @@ const output = users.map(x => x.firstName + " "+  x.lastName);
 console.log(output);
 
 //finding age(reduce)
-const output1 = users.reduce(function(acc, curr){
-    if(acc(curr.age)){
-        acc[curr.age] = ++acc[curr.age];
-    }
-    else {
-        acc[curr.age] = 1
-    }
-},{})
+// const output1 = users.reduce(function(acc, curr){
+//     if(acc[curr.age]){
+//         acc[curr.age] = ++acc[curr.age];
+//     }
+//     else {
+//         acc[curr.age] = 1;
+//     }
+//     return acc;
+// },{})
 
-console.log(output1);
+// console.log(output1);
+
+//firstname of all the people whos age is less than 30
+const peeps = users.filter(x => x.age < 30 );
+console.log(peeps);
