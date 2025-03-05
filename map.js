@@ -18,14 +18,15 @@
 //     return x.toString(2);
 // })
 
-// //or
+//OR 
 
 // const outpur = arr.map((x) => x.toString(2));
 
 // console.log(output);
 // console.log(outpur);
 
-//filter: filter values inside array 
+//FILTER:
+//filter values inside array 
 const arr = [ 5, 1, 3, 2, 6];
 
 // function isOdd(x){
