@@ -1,8 +1,8 @@
 const users = [
     { firstName: "srishti", lastName: "manna", age: 26 },
     { firstName: "kendal", lastName: "jenner", age: 16 },
-    { firstName: "lucy", lastName: "savana", age: 10 },
-    { firstName: "ben", lastName: "atkins", age: 50 },
+    // { firstName: "lucy", lastName: "savana", age: 10 },
+    // { firstName: "ben", lastName: "atkins", age: 50 },
 ];
 
 //list of full names(map)
@@ -30,3 +30,5 @@ const peeps = users.filter((x) => x.age < 30)
 .map((x) => x.firstName);
 
 console.log(peeps);
+
+
