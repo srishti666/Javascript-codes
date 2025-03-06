@@ -26,5 +26,7 @@ console.log(output);
 //firstname of all the people whos age is less than 30
 // const peeps = users.filter(x => x.age < 30 );
 
-const peeps = users.filter((x) => x.age < 30).map((x) => x.firstName);
+const peeps = users.filter((x) => x.age < 30)
+.map((x) => x.firstName);
+
 console.log(peeps);
